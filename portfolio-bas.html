@@ -97,11 +97,17 @@
                 <li>If it was a hit are all the ships sunk or not</li>
                 <li>If not or if it was miss switch players</li>
               </ul>
-              <!-- <p>
-                <img src="images/image_8.jpg" alt="" class="img-fluid">
-              </p> -->
               <h2 class="mb-3 mt-5">#4. Solution </h2>
               <p>2D Array, Functions that will change the State of the game, Conditionals that will determine if where a player clicked if a ship was on that grid element (hit) or not (miss)  and if it was a hit check to see if all the other ships were or were not hit. If they all were hit then the player who made that click wins.</p>
+              <p>
+                <img src="images/hitOrMiss.png" alt="" class="img-fluid">
+              </p>
+              <p>Above is the hitOrMiss method. This method checks which player is active and inactive. Then it checks to see if there is a ship on the inactive player's grid where the active player clicked by searching for one of four things: 1) a 0 - meaning there is not a ship,  2) either a lowercase  'd', 'c', 's', 'b', or 'a' - meaning there is a ship, 3) if there is an uppercase 'D', 'C', 'S', 'B', or 'A' - meaning there is a ship but it has already been hit or 4) none of the above applies - it notifies the player that they clicked on their board.</p>
+              <p>
+                <img src="images/checkWinners.png" alt="" class="img-fluid">
+              </p>
+               <p>Above is the checkWinners method. This method assumes that there is a winner and looks through the inactive player's board checks to see if there are any strings that are uppercased and it is not a single element. Switches player if there is not a winner.</p>
+              <p>
               <h2 class="mb-3 mt-5">#5. Result </h2>
               <p>A fun nostalgic game that I feel pays homage to the classics and sparks the inner kid in every player!</p>
               <h3 class="mb-3 mt-5">#6. Technologies</h3>

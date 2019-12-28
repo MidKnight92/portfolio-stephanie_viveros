@@ -90,10 +90,10 @@
               <h2 class="mb-3 mt-5">#3. Process & Insight </h2>
               <p>I work very methodically. In the first few days, I spent time conducting research and planning how and what technologies I was going to use for my app. Then I worked on the backend and then proceeded to the frontend. Every day during stand-ups, I would declare my daily game plan. </p>
               <h2 class="mb-3 mt-5">#4. Solution </h2>
-              <p>This is how I went around Petfinder API O-Auth:</p>
               <p>
                 <img src="images/tokenSC.png" alt="" class="img-fluid">
               </p>
+              <p>To work around the Petfinder API O-Auth, I created a function that does a fetch call for a token. This function pushes the token into an array. I then set that function to an interval that will be invoked every hour. In my get routes, my fetch call will always call the last element in the array. Thus, my token will auto-refresh and my fetch calls will always use the newest token.</p>
               <h2 class="mb-3 mt-5">#5. Result </h2>
               <p>I was very pleased with how the app turned out. I spent a lot of time and energy getting it function and appear how I envisioned. I anticipated that React would be the most challenging part. However, it turned out to be very seamless because I used React Router. Despite, the unexpected challenges I did face in the beginning - I overcame them.</p>
               <h3 class="mb-3 mt-5">#6. Technologies</h3>
